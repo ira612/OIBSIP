@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Landing Page</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(to right, #e0f0ff, #f9fdff);
+  }
+
+  .hero-text {
+    width: 50%;
+  }
+
+  .hero-text h2 {
+    color: #0077cc;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-text button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .hero-text button:hover {
+    background: #005fa3;
+  }
+
+  .hero-img {
+    width: 40%;
+  }
+
+  .hero-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* FEATURES SECTION */
+  .features {
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .feature-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-box h3 {
+    color: #0077cc;
+    margin-bottom: 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-text, .hero-img {
+      width: 100%;
+    }
+
+    .features {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>My Landing Page Project</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome to My Landing Page</h2>
+      <p>
+        This project demonstrates how to add columns, divide sections, and arrange items using HTML and CSS.
+        You’ll see headers, footers, boxes, colors, and clean alignments — all designed to look impressive without overlap.
+      </p>
+      <button>Learn More</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://www.pinterest.com/pin/206250857931713733/" alt="Web design image">
+    </div>
+  </section>
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h3>Clean Layout</h3>
+      <p>Columns and sections are properly aligned with padding and margins to ensure a balanced design.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Color Palette</h3>
+      <p>Soft, modern colors make the landing page look professional and visually pleasant.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Responsive Design</h3>
+      <p>Using flexible grids, the page adapts to any screen size without overlapping elements.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    © 2025 My Landing Page | Designed with HTML & CSS
+  </footer>
+
+</body>
+</html>
